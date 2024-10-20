@@ -8,6 +8,7 @@ import { load } from '../src/js/storage/load.js';
 const fakeLoginResponse = {
   accessToken: 'test-token',
 };
+
 const mockFetchSuccess = jest.fn().mockResolvedValue({
   ok: true,
   json: jest.fn().mockResolvedValue({ ...fakeLoginResponse }),
